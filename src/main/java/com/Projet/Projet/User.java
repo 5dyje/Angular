@@ -1,0 +1,24 @@
+package com.Projet.Projet;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.Data;
+
+@Entity
+@Data
+@Table(name = "USERS")
+public class User {
+    @Id
+    @Column(name = "ID")
+    private int id;
+    @Column(name = "NOM")
+    private String nom;
+    @Column(name = "MDP")
+    private int mdp;
+    @Column(name = "ROLE_ID")
+    private String role_id;
+
+}
+
